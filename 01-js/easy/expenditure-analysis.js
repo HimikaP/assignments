@@ -6,10 +6,9 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  for(let i=0;i<transactions.length;i++){
-    transactions[i]["category"], transactions[i]["price"]
+  for (let i = 0; i < transactions.length; i++) {
+    transactions[i]["category"], transactions[i]["price"];
   }
-
 
   return [];
 }

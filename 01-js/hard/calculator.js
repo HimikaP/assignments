@@ -16,6 +16,41 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Calculator {}
+class Calculator {
+
+  
+
+  constructor(result){
+  }
+
+  sum(a,b){
+    return a+b;  
+  }
+
+  subtract(a,b){
+    return a-b;
+  }
+
+  multiply(a,b){
+    return a*b;
+  }
+
+  divide(a,b){
+    return a/b;
+  }
+
+  clear(result){
+    result =0;
+    return result;
+  }
+
+  getResult(str){
+
+  }
+
+  calculate(){
+    
+  }
+}
 
 module.exports = Calculator;

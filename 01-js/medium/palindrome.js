@@ -4,6 +4,17 @@
 */
 
 function isPalindrome(str) {
+
+
+// remove non-alphanumerics and convert to lowercase
+  str = str.replace(/[^a-zA-Z0-9]/g,'').toLowerCase();
+  n=str.length;
+
+  for(let i=0,j=n-1;i< n/2; i++, j--){
+    if(str[i] != str[j]){
+      return false;
+    }
+  }
   return true;
 }
 

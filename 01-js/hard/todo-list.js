@@ -12,6 +12,36 @@
 
 class Todo {
 
+  constructor(index, todo){
+    this.index = index;
+    this.todo = todo;
+  }
+
+   add(todo){
+
+  }
+
+   remove(indexOfTodo){
+    return this.todo;
+
+  }
+
+   update(index, updatedTodo){
+
+  }
+
+   getAll(){
+
+  }
+
+   get(indexOfTodo){
+
+  }
+
+  clear() {
+
+  }
+
 }
 
 module.exports = Todo;
