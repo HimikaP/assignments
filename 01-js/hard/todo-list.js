@@ -10,38 +10,49 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Todo {
+class Todo{
 
-  constructor(index, todo){
-    this.index = index;
-    this.todo = todo;
+  constructor(){
+    this.todos = []
   }
 
    add(todo){
-
+    this.todos.push(todo)
   }
 
    remove(indexOfTodo){
-    return this.todo;
+    // if(typeof arr[indexOfTodo]! = undefined)
 
+    if(this.todos.hasOwnProperty(indexOfTodo) == true)
+    // this.todos.remove(indexOfTodo) - there is no in built remove function in arrays in js
+    this.todos.splice(indexOfTodo,1);
   }
 
    update(index, updatedTodo){
-
+    if(this.todos.hasOwnProperty(index) == true){
+    // if(typeof this.todos[index] != undefined)  {
+    this.todos[index] = updatedTodo
+    }
   }
 
    getAll(){
+      return this.todos;
+    }
 
-  }
+  
 
    get(indexOfTodo){
+    if(this.todos.hasOwnProperty(indexOfTodo) == true)
+    return this.todos[indexOfTodo];
 
+    return null;
   }
 
   clear() {
-
+    this.todos = []
+    return this.todos;
   }
-
 }
+
 
 module.exports = Todo;
